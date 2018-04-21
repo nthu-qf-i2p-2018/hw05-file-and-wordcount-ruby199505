@@ -39,17 +39,17 @@ def main(filename):
         # write table head
         writer.writerow(['word', 'count'])
         # write all (word, count) pair into the csv writer
-        writer.writerows(counter)
+        writer.writerows(counter.most_common())
 
     # dump to a json file named "wordcount.json"
     with open("wordcount.json", "w") as json_file:
         writer = json_file.write()
         writer.writerow(['word', 'count'])
-        writer.writeroes(counter)
+        writer.writeroes(counter.most_common())
 
     # BONUS: dump to a pickle file named "wordcount.pkl"
     # hint: dump the Counter object directly
-    pickle.dump(counter, open("wordcount.pkl", 'wb'))
+    pickle.dump(counter.most_common(), open("wordcount.pkl", 'wb'))
 
 if __name__ == '__main__':
     main("i_have_a_dream.txt")
