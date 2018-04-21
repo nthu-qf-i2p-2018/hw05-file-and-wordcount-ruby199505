@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import csv
 import string
 from collections import Counter
 txtfile = open("i_have_a_dream.txt", encoding = 'utf-8')
@@ -44,7 +45,7 @@ def main(filename):
 
     # dump to a json file named "wordcount.json"
     with open("wordcount.json", "w") as json_file:
-        writer = json_file.write(0)
+        writer = json_file
         writer.writerow(['word', 'count'])
         writer.writeroes(counter)
 
