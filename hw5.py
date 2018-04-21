@@ -36,7 +36,7 @@ def main(filename):
     # ...
     with open("wordcount.csv", "w") as csv_file:
         # create a csv writer from a file object (or descriptor)
-        writer = csv_file.write()
+        writer = csv_file
         # write table head
         writer.writerow(['word', 'count'])
         # write all (word, count) pair into the csv writer
