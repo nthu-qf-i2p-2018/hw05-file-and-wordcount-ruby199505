@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-import csv
+import string
+from collections import Counter
 txtfile = open("i_have_a_dream.txt", encoding = 'utf-8')
 
 def main(filename):
@@ -19,7 +20,7 @@ def main(filename):
         for word in words:
             # then, remove (strip) unwanted punctuations from every word
             # "dream." => "dream"
-            word = word.strip('!?.,;:')
+            word = word.strip(string.punctuation)
             # check if word is not empty
             if word:
                 # append the word to "all_words" list
