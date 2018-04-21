@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import txt
-txtfile = open("i_have_a_dream.txt, encoding = 'utf-8')
+txtfile = open("i_have_a_dream.txt", encoding = 'utf-8')
 
 def main(filename):
     # read file into lines
