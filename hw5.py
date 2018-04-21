@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import txt
+import csv
 txtfile = open("i_have_a_dream.txt", encoding = 'utf-8')
 
 def main(filename):
