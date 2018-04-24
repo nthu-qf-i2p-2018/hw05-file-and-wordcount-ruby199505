@@ -5,7 +5,6 @@ import pickle
 
 import string
 
-
 def main(filename):
 	txtfile = open(filename)
     # read file into lines
