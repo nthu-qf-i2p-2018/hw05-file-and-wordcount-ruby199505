@@ -6,7 +6,7 @@ import pickle
 import string
 
 def main(filename):
-	txtfile = open(filename)
+    txtfile = open(filename)
     # read file into lines
     lines = txtfile.readlines()
 
@@ -30,7 +30,7 @@ def main(filename):
                 all_words.append(word)
 
     # compute word count from all_words
-	from collections import Counter
+    from collections import Counter
     counter = Counter(all_words).most_common()
 
     # dump to a csv file named "wordcount.csv":
@@ -54,7 +54,7 @@ def main(filename):
     # BONUS: dump to a pickle file named "wordcount.pkl"
     # hint: dump the Counter object directly
     with open("wordcount.pkl", "wb") as pkl_file:
-		pickle.dump(counter, pkl_file)
+	pickle.dump(counter, pkl_file)
 
 if __name__ == '__main__':
     main("i_have_a_dream.txt")
